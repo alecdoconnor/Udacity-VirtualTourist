@@ -11,7 +11,6 @@
 		7002E76D20013D9E00425858 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7002E76C20013D9E00425858 /* Photo.swift */; };
 		7002E7972001AC5A00425858 /* PhotoAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7002E7962001AC5A00425858 /* PhotoAlbumViewController.swift */; };
 		7002E7992001AC6E00425858 /* PhotoAlbumMapSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7002E7982001AC6E00425858 /* PhotoAlbumMapSectionViewController.swift */; };
-		7002E79D2001AEFF00425858 /* CoreDataCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7002E79C2001AEFF00425858 /* CoreDataCollectionViewController.swift */; };
 		7002E7A12001B7B100425858 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7002E79F2001B7B100425858 /* CollectionViewCell.swift */; };
 		7002E7A22001B7B100425858 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7002E7A02001B7B100425858 /* CollectionViewCell.xib */; };
 		703048802002A7FE0082B700 /* PhotoAlbumMapSectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7030487F2002A7FD0082B700 /* PhotoAlbumMapSectionViewController.xib */; };
@@ -53,7 +52,6 @@
 		7002E76C20013D9E00425858 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		7002E7962001AC5A00425858 /* PhotoAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAlbumViewController.swift; sourceTree = "<group>"; };
 		7002E7982001AC6E00425858 /* PhotoAlbumMapSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAlbumMapSectionViewController.swift; sourceTree = "<group>"; };
-		7002E79C2001AEFF00425858 /* CoreDataCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataCollectionViewController.swift; sourceTree = "<group>"; };
 		7002E79F2001B7B100425858 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		7002E7A02001B7B100425858 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		7030487F2002A7FD0082B700 /* PhotoAlbumMapSectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoAlbumMapSectionViewController.xib; sourceTree = "<group>"; };
@@ -134,7 +132,6 @@
 		703048862002A9790082B700 /* Photo Collection */ = {
 			isa = PBXGroup;
 			children = (
-				7002E79C2001AEFF00425858 /* CoreDataCollectionViewController.swift */,
 				7030488720047E710082B700 /* PhotoAlbumCollectionViewController.swift */,
 				7030488820047E710082B700 /* PhotoAlbumCollectionViewController.xib */,
 				7002E79F2001B7B100425858 /* CollectionViewCell.swift */,
@@ -370,7 +367,6 @@
 				7002E7972001AC5A00425858 /* PhotoAlbumViewController.swift in Sources */,
 				7002E7992001AC6E00425858 /* PhotoAlbumMapSectionViewController.swift in Sources */,
 				7030488920047E710082B700 /* PhotoAlbumCollectionViewController.swift in Sources */,
-				7002E79D2001AEFF00425858 /* CoreDataCollectionViewController.swift in Sources */,
 				709BC93C1FFEAB9C003B323C /* VirtualTourist.xcdatamodeld in Sources */,
 				704B77BA20058A55008600E7 /* ArrayExtensions.swift in Sources */,
 				709BC9661FFEB7A5003B323C /* CoreDataStack.swift in Sources */,
