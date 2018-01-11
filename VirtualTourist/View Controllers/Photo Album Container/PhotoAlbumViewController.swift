@@ -70,7 +70,7 @@ class PhotoAlbumViewController: UIViewController {
     
     func getNewImageURLs(forceUpdate: Bool = false) {
         guard let pin = locationPin else {
-            assertionFailure("Pin wasn't set in time")
+            print("Error: Pin wasn't set in time")
             return
         }
         
@@ -92,7 +92,7 @@ class PhotoAlbumViewController: UIViewController {
         grabber.getImageURLs(lat: pin.latitude, lon: pin.longitude) { (urls, error) in
             self.refreshInProgress = false
             guard let urls = urls else {
-                assertionFailure("Error: Network response was invalid")
+                print("Error: Network response was invalid")
                 return
             }
             DispatchQueue.main.async {

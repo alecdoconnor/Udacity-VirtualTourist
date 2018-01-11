@@ -205,7 +205,7 @@ extension TravelLocationsViewController: NSFetchedResultsControllerDelegate {
     func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
         
         guard let pin = anObject as? Pin else {
-            assertionFailure("anObject should only be a Pin")
+            print("Error: anObject should only be a Pin")
             return
         }
         
@@ -220,7 +220,7 @@ extension TravelLocationsViewController: NSFetchedResultsControllerDelegate {
             mapView.removeAnnotations([pin])
             mapView.addAnnotations([pin])
         case .move:
-            assertionFailure("A pin should never call a move change?")
+            print("Error: A pin should never call a move change?")
         }
     }
     

@@ -146,7 +146,7 @@ extension PhotoAlbumCollectionViewController {
             self.backgroundContext.perform {
                 do {
                     guard let url = photo.imageURL else {
-                        assertionFailure("Image URL is manditory")
+                        print("Error: Image URL is manditory")
                         return
                     }
                     photo.image = try Data(contentsOf: url)

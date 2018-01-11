@@ -11,7 +11,7 @@ import Foundation
 class FlickerGrabber {
     
     private var baseURL = "https://api.flickr.com/services/rest/?method=flickr.photos.search&format=json&nojsoncallback=1"
-    private let authKey = "eb2465c83afa11a7771c10c2856a8bb6"
+    private let authKey = "d9e50f7f04923d32005d7c8de0743512"
     
     private let session = URLSession.shared
     
