@@ -18,6 +18,7 @@ class FlickerGrabber {
     let photoLimit = 12
     
     init() {
+        baseURL += "&per_page=4000"
         baseURL += "&api_key=\(authKey)"
     }
     

@@ -86,7 +86,7 @@ class TravelLocationsViewController: UIViewController {
         
         //Create Long Press Gesture
         let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(longPress))
-        longPressGesture.minimumPressDuration = 1
+        longPressGesture.minimumPressDuration = 0.5
         mapView.addGestureRecognizer(longPressGesture)
     }
     

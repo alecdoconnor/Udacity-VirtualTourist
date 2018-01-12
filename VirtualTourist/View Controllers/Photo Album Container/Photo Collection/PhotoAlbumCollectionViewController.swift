@@ -108,7 +108,9 @@ class PhotoAlbumCollectionViewController: UICollectionViewController {
             }, completion: { (_) in
                 self.collectionView?.reloadItems(at: (self.collectionView?.indexPathsForVisibleItems)!)
             })
-            self.locationPin?.removeFromPhotos(NSSet(array: removedPhotos))
+            for photo in removedPhotos {
+                self.persistentContainer.viewContext.delete(photo)
+            }
             
             // Save context
             let appDelegate = UIApplication.shared.delegate as! AppDelegate

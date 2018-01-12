@@ -96,7 +96,9 @@ class PhotoAlbumViewController: UIViewController {
                 return
             }
             DispatchQueue.main.async {
-                pin.removeFromPhotos(pin.photos!)
+                for photo in (Array(pin.photos!) as! [Photo]) {
+                    self.persistentContainer.viewContext.delete(photo)
+                }
                 
                 // Save context
                 let appDelegate = UIApplication.shared.delegate as! AppDelegate

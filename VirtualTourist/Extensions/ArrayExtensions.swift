@@ -22,7 +22,7 @@ extension Array {
     }
     func getRandomValues(limit: Int) -> Array {
         if limit > 0 && limit < self.count {
-            return Array(self.prefix(limit))
+            return Array(self.shuffled().prefix(limit))
         } else {
             return self
         }
